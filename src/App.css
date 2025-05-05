@@ -1,4 +1,30 @@
 @import "tailwindcss";
+@layer utilities {
+  @keyframes disco {
+    0% {
+      height: 10%;
+    }
+    50% {
+      height: 30%;
+    }
+    100% {
+      height: 100%;
+    }
+  }
+  .animate-disco {
+    animation: disco 0.3s ease-in-out infinite;
+  }
+}
+@theme{
+  --color-cyan-primary: #33CCBB;
+  --color-ichika: #33AAEE  ;
+}
+.leo-before::before{
+  content: url('https://res.cloudinary.com/duyurqj38/image/upload/v1234567890/munisekai/logo/leo');
+  position: absolute;
+  top: -35px;
+  left: -35px;
+}
 html{
   min-height: 100vh;
 }
