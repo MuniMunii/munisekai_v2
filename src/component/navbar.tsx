@@ -1,23 +1,14 @@
 import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import menuHamburger from "../assets/icons8-menu.svg";
-import {ImageOptimization } from "./ImageOptimization";
+import LogoTextHorizontal from "../assets/bg/text_logo.webp";
+import LogoTextHVertical from "../assets/bg/text_logo-vertical.webp";
+import useMediaQuery from "../hook/useMediaQuery";
 function Navbar() {
-  const [isWideScreen, setIsWideScreen] = useState<boolean>(false);
-  useEffect(() => {
-    const mediaQuery = window.matchMedia("(min-width:768px)");
-    function handleMediaQueryChange(e: MediaQueryListEvent) {
-      setIsWideScreen(e.matches);
-    }
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
-    return () =>
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
-  }, []);
-  useEffect(()=>{console.log(isWideScreen)},[isWideScreen])
+  const isWideScreen = useMediaQuery("(min-width:768px)");
   const [openNav, setOpenNav] = useState<boolean>(false);
   const phoneRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    console.log(openNav);
     document.documentElement.style.overflowY = openNav ? "hidden" : "auto";
   }, [openNav]);
   useEffect(() => {
@@ -38,7 +29,8 @@ function Navbar() {
     const test = [1, 2, 3, 4, 5].map((i) => {
       const randomHeight = Math.floor(Math.random() * 10) + 1;
       return (
-        <div
+        <motion.div
+        transition={{type:'spring',bounce:0.5}}
           key={i}
           className="animate-disco animate-(--disco) w-[2px] bg-white"
           style={{ animationDelay: `0.${randomHeight}s` }}
@@ -73,7 +65,7 @@ function Navbar() {
             animate={{ opacity: 1 }}
             className="bg-black/60 z-40 backdrop-blur fixed w-full h-full flex flex-row-reverse max-md:items-center max-md:justify-center p-2"
           >
-          {isWideScreen?<div className="absolute top-0 left-0 w-full h-screen"><ImageOptimization url="munisekai/bg/text_logo_horizontal" className="h-full pointer-events-none"/></div>:<div className=" absolute top-0 left-0"><ImageOptimization className="w-full pointer-events-none" height={700} url="munisekai/bg/text_logo"/></div>}
+          {isWideScreen?<div className="absolute top-0 left-0 w-full h-screen"><img src={LogoTextHorizontal} alt="text_logo_horizontal" className="h-full pointer-events-none"/></div>:<div className=" absolute top-0 left-0"><img className="w-full pointer-events-none" alt="logo_text_vertical" src={LogoTextHVertical}/></div>}
             <motion.div
               ref={phoneRef}
               initial={{ x: 50, rotateZ: 50 }}

@@ -19,6 +19,9 @@
   --color-cyan-primary: #33CCBB;
   --color-ichika: #33AAEE  ;
 }
+@layer base{
+  html{font-family: "Sansation", sans-serif;}
+}
 .leo-before::before{
   content: url('https://res.cloudinary.com/duyurqj38/image/upload/v1234567890/munisekai/logo/leo');
   position: absolute;
