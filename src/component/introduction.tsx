@@ -1,21 +1,11 @@
 import { useRef } from "react"
-import { motion, useScroll, useSpring, useTransform } from "framer-motion"
+import { motion } from "framer-motion"
 import {
-  BackgroundImageUrl,
   ImageOptimization,
 } from "./ImageOptimization";
+import ProgressBar from "./progressBar";
 export default function Introduction(){
-    const comp1Ref = useRef(null);
-    const { scrollYProgress } = useScroll({
-      target: comp1Ref,
-      offset: ["start 80%", "end end"],
-    });
-    const height = useTransform(scrollYProgress, [0, 1], [0, 1]);
-    const scaleY = useSpring(height, {
-      stiffness: 100,
-      damping: 30,
-      restDelta: 0.001,
-    });
+    const introductionRef = useRef(null);
     function FadeTextElement({
       text,
       delay,
@@ -42,19 +32,10 @@ export default function Introduction(){
     }
     return (
         <motion.div
-          ref={comp1Ref}
+          ref={introductionRef}
           className="w-full overflow-hidden bg-cover text-slate-700 relative pt-10"
-          style={{
-            backgroundImage: BackgroundImageUrl({
-              type: "img",
-              url: "munisekai/bg/bg-repeat",
-            }),
-          }}
         >
-          <motion.div
-            className="absolute top-0 left-0 bg-gradient-to-b from-ichika to-cyan-primary w-2 h-full"
-            style={{ originY: 0, scaleY }}
-          />
+          <ProgressBar ref={introductionRef} colorFrom="#33ccbb" colorTo="#33aaee"/>
           <div className="w-full h-4 absolute -top-2 left-0 bg-cyan-primary"></div>
           {/* first row */}
           <div className="flex flex-row justify-start mb-28 max-md:flex-col gap-x-18">
@@ -81,7 +62,7 @@ export default function Introduction(){
                 delay={0.1}
                 text="Introduction"
                 element={"h2"}
-                className="text-cyan-primary relative uppercase"
+                className="text-cyan-primary relative uppercase text-4xl"
               />
               <p className="text-justify">
                 <FadeTextElement
