@@ -1,17 +1,32 @@
-import { useRef, useState } from "react";
+import { useRef, useState,useEffect,lazy, Suspense } from "react";
 import "./App.css";
 import OpeningComp from "./component/Opening";
-import Navbar from "./component/Navbar";
 import Introduction from "./component/introduction";
 import { BackgroundImageUrl } from "./component/ImageOptimization";
 import ProgressBar from "./component/progressBar";
 import { CarouselCharacter } from "./component/carousel";
+import Lenis from "@studio-freight/lenis";
 function App() {
   const [videoEnded, setVideoEnded] = useState<boolean>(true);
+  const NavbarLazy=lazy(()=> import('./component/Navbar'))
   const divElement=useRef<HTMLDivElement>(null)
+  useEffect(()=>{
+  const lenis=new Lenis({
+  duration:1,
+  // easing:(t)=>Math.min(1,1.001-Math.pow(2,-10*t)),
+  smoothWheel:true})
+  function raf(time:number){
+    lenis.raf(time)
+    requestAnimationFrame(raf)
+  }
+  requestAnimationFrame(raf)
+  return ()=> lenis.destroy()
+  },[])
   return (
     <>
-      <Navbar />
+    <Suspense>
+      <NavbarLazy />
+      </Suspense>
       <OpeningComp videoEnded={videoEnded} setVideoEnded={setVideoEnded} />
       {videoEnded && (
         <>
@@ -22,7 +37,7 @@ function App() {
             }),
           }}>
         <Introduction/>
-        <div ref={divElement} className="w-full h-[800px] relative"><ProgressBar ref={divElement} colorFrom="#33aaee" colorTo="#33ccbb"/><CarouselCharacter/></div>
+        <div ref={divElement} style={{background:BackgroundImageUrl({type:'img',url:'munisekai/bg/bg_2'}),backgroundRepeat:'no-repeat',backgroundSize:'100% 100%'}} className="backdrop-blur-3xl bg-white/30 w-full min-h-screen relative p-6"><ProgressBar title="Unit" refTarget={divElement} colorFrom="#33aaee" colorTo="#05df72"/><CarouselCharacter/></div>
         </div>
         </>
       )}

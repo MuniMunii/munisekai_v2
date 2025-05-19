@@ -1,14 +1,15 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 interface ProgressBarProps {
   colorFrom?: string;
   colorTo?: string;
+  title:string
+  refTarget:React.RefObject<HTMLElement|null>
 }
-const ProgressBar = forwardRef<HTMLElement, ProgressBarProps>(
-  ({ colorFrom, colorTo }, ref) => {
+const ProgressBar = ({colorFrom,colorTo,refTarget,title}:ProgressBarProps) => {
     // const comp1Ref = useRef(ref);
     const { scrollYProgress } = useScroll({
-      target: ref as React.RefObject<HTMLElement>,
+      target: refTarget,
       offset: ["start 95%", "end end"],
     });
     const height = useTransform(scrollYProgress, [0, 1], [0, 1]);
@@ -29,9 +30,9 @@ const ProgressBar = forwardRef<HTMLElement, ProgressBarProps>(
           }, ${colorTo ? colorTo : "#33ccbb"})`,
         }}
       >
-        Introduction
+       {title}
       </motion.div>
     );
   }
-);
+
 export default ProgressBar;

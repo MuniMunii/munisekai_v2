@@ -35,7 +35,7 @@ export default function Introduction(){
           ref={introductionRef}
           className="w-full overflow-hidden bg-cover text-slate-700 relative pt-10"
         >
-          <ProgressBar ref={introductionRef} colorFrom="#33ccbb" colorTo="#33aaee"/>
+          <ProgressBar title="Introduction" refTarget={introductionRef} colorFrom="#33ccbb" colorTo="#33aaee"/>
           <div className="w-full h-4 absolute -top-2 left-0 bg-cyan-primary"></div>
           {/* first row */}
           <div className="flex flex-row justify-start mb-28 max-md:flex-col gap-x-18">
@@ -57,7 +57,7 @@ export default function Introduction(){
                 url="munisekai/bg/beyond_ichika"
               />
             </motion.div>
-            <div className="w-3/4 lg:max-w-[400px] md:w-full px-2 max-md:mx-0 max-md:px-4 leading-10">
+            <div className="w-3/4 lg:max-w-[400px] md:w-full max-md:mx-0 px-6 leading-10">
               <FadeTextElement
                 delay={0.1}
                 text="Introduction"
@@ -117,7 +117,7 @@ export default function Introduction(){
                 url="munisekai/bg/sekai_ichika"
               />
             </motion.div>
-            <div className="w-3/4 lg:max-w-[400px] md:w-full px-2 max-md:mx-0 max-md:px-4 max-md:ml-auto leading-10">
+            <div className="w-3/4 lg:max-w-[400px] md:w-full px-6 max-md:mx-0 max-md:ml-auto leading-10">
               <p className="text-justify">
                 <FadeTextElement
                   text={
