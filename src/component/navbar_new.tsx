@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import menuHamburger from "../assets/icons8-menu.svg";
 import LogoTextHorizontal from "../assets/bg/text_logo.webp";
 import LogoTextHVertical from "../assets/bg/text_logo-vertical.webp";
-import useMediaQuery from "../hook/useMediaQuery";
+import useMediaQuery from "../hook/useMediaQuerys";
 function Navbar() {
   const isWideScreen = useMediaQuery("(min-width:768px)");
   const [openNav, setOpenNav] = useState<boolean>(false);
