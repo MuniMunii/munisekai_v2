@@ -1,6 +1,6 @@
 import { useRef, useState,useEffect,lazy, Suspense } from "react";
 import "./App.css";
-import OpeningComp from "./component/Opening";
+import OpeningComp from "./component/opening_new";
 import Introduction from "./component/introduction";
 import { BackgroundImageUrl } from "./component/ImageOptimization";
 import ProgressBar from "./component/progressBar";
@@ -8,7 +8,7 @@ import { CarouselCharacter } from "./component/carousel";
 import Lenis from "@studio-freight/lenis";
 function App() {
   const [videoEnded, setVideoEnded] = useState<boolean>(true);
-  const NavbarLazy=lazy(()=> import('./component/Navbar'))
+  const NavbarLazy=lazy(()=> import('./component/navbar_new'))
   const divElement=useRef<HTMLDivElement>(null)
   useEffect(()=>{
   const lenis=new Lenis({
