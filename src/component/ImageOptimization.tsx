@@ -15,7 +15,7 @@ export function ImageOptimization({url,quality='auto',height,width,rotateAngle,c
         myImage.rotate(byAngle(rotateAngle))
     }
     useEffect(()=>{const img=new Image();img.onload=()=>setIsImageLoading(false);img.src=myImage.toURL()},[url])
-    return (<AdvancedImage cldImg={myImage} className={`object-contain ${className}`}/>)
+    return isLoadingImage?<div className='flex gap-2'><div className='rounded-full bg-cyan-primary size-1 animate-bounce'/><div className='rounded-full bg-cyan-primary size-1 animate-bounce delay-75'/><div className='rounded-full bg-cyan-primary size-1 animate-bounce delay-100'/></div>:<AdvancedImage cldImg={myImage} className={`object-contain ${className}`}/>
 }
 export function BackgroundImageUrl({url,quality='auto',type}:{type:'video'|'img',url:string,quality?:QualityProps} ) {
     if(type === 'img'){
