@@ -8,7 +8,6 @@ type QualityProps='auto'|'low'|'medium'|'high'|'best'|number
 const cld = new Cloudinary({ cloud: { cloudName: `${import.meta.env.VITE_CLOUDNAME}` } })
 export function ImageOptimization({url,quality='auto',height,width,rotateAngle,className,loading=false}:{loading?:boolean,className?:string,rotateAngle?:number,quality?:QualityProps,url:string,width?:number,height?:number}) {
   const [isLoadingImage,setIsImageLoading]=useState<boolean>(loading)
-  console.log(isLoadingImage)
     const myImage = cld.image(url).format('auto').quality(quality).resize(fit().width(width ?? 1920).height(height ?? 1080))
     if(rotateAngle){
       myImage.setVersion(Date.now())

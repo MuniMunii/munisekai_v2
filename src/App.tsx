@@ -4,7 +4,7 @@ import OpeningComp from "./component/opening_new";
 import Introduction from "./component/introduction";
 import { BackgroundImageUrl } from "./component/ImageOptimization";
 import ProgressBar from "./component/progressBar";
-import { CarouselCharacter } from "./component/carousel";
+import { CarouselCharacter } from "./component/carousel/carousel";
 import Lenis from "@studio-freight/lenis";
 function App() {
   const [videoEnded, setVideoEnded] = useState<boolean>(true);
