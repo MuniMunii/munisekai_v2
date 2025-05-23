@@ -19,21 +19,21 @@ export const dummyObject: GroupProps[] = [
         stamps: [
           {
             url: "munisekai/char/sticker/ichika1.png",
-            zIndex: 0,
+            zIndex: -1,
             top: 5,
             left: 5,
           },
           {
             url: "munisekai/char/sticker/ichika2.png",
-            zIndex: 0,
+            zIndex: -1,
             left: 60,
-            top: 25,
+            top: 30,
           },
           {
             url: "munisekai/char/sticker/ichika3.png",
-            zIndex: 11,
+            zIndex: -1,
             left: 0,
-            top: 60,
+            top: 50,
           },
         ],
 
@@ -58,13 +58,13 @@ export const dummyObject: GroupProps[] = [
           },
           {
             url: "munisekai/char/sticker/saki2.png",
-            zIndex: 0,
-            left: 60,
-            top: 25,
+            zIndex: -1,
+            left: 55,
+            top: 55,
           },
           {
             url: "munisekai/char/sticker/saki3.png",
-            zIndex: 11,
+            zIndex: -1,
             left: 0,
             top: 60,
           },
@@ -86,19 +86,19 @@ export const dummyObject: GroupProps[] = [
           {
             url: "munisekai/char/sticker/honami1.png",
             zIndex: 0,
-            top: 5,
+            top: 15,
             left: 5,
           },
           {
             url: "munisekai/char/sticker/honami2.png",
-            zIndex: 0,
+            zIndex: -1,
             left: 60,
             top: 25,
           },
           {
             url: "munisekai/char/sticker/honami3.png",
             zIndex: 11,
-            left: 0,
+            left: 10,
             top: 60,
           },
         ],
@@ -124,9 +124,9 @@ export const dummyObject: GroupProps[] = [
           },
           {
             url: "munisekai/char/sticker/shiho2.png",
-            zIndex: 0,
+            zIndex: -1,
             left: 15,
-            top: 30,
+            top: 35,
           },
           {
             url: "munisekai/char/sticker/shiho3.png",
@@ -164,15 +164,15 @@ export const dummyObject: GroupProps[] = [
         stamps: [
           {
             url: "munisekai/char/sticker/minori1.png",
-            zIndex: 0,
-            top: 5,
-            left: 5,
+            zIndex: -1,
+            top: 30,
+            left: 60,
           },
           {
             url: "munisekai/char/sticker/minori2.png",
-            zIndex: 0,
-            left: 60,
-            top: 25,
+            zIndex: -1,
+            left: 0,
+            top: 5,
           },
           {
             url: "munisekai/char/sticker/minori3.png",
@@ -196,14 +196,14 @@ export const dummyObject: GroupProps[] = [
         bodyImg: "munisekai/char/haruka",
         stamps: [
           {
-            url: "munisekai/char/sticker/haruka1.png",
-            zIndex: 0,
-            top: 5,
-            left: 5,
-          },
-          {
             url: "munisekai/char/sticker/haruka2.png",
             zIndex: 0,
+            top: 5,
+            left: 0,
+          },
+          {
+            url: "munisekai/char/sticker/haruka1.png",
+            zIndex: -1,
             left: 60,
             top: 25,
           },
@@ -230,19 +230,19 @@ export const dummyObject: GroupProps[] = [
         stamps: [
           {
             url: "munisekai/char/sticker/airi1.png",
-            zIndex: 0,
+            zIndex: -1,
             top: 5,
             left: 5,
           },
           {
             url: "munisekai/char/sticker/airi2.png",
-            zIndex: 0,
+            zIndex: -1,
             left: 60,
             top: 25,
           },
           {
             url: "munisekai/char/sticker/airi3.png",
-            zIndex: 11,
+            zIndex: -1,
             left: 0,
             top: 60,
           },
@@ -262,22 +262,22 @@ export const dummyObject: GroupProps[] = [
         bodyImg: "munisekai/char/shizuku",
         stamps: [
           {
-            url: "munisekai/char/sticker/shizuku1.png",
-            zIndex: 0,
-            top: 5,
-            left: 5,
+            url: "munisekai/char/sticker/shizuku3.png",
+            zIndex: -1,
+            top: 20,
+            left: -5,
           },
           {
             url: "munisekai/char/sticker/shizuku2.png",
-            zIndex: 0,
+            zIndex: -1,
             left: 60,
             top: 25,
           },
           {
-            url: "munisekai/char/sticker/shizuku3.png",
-            zIndex: 11,
+            url: "munisekai/char/sticker/shizuku1.png",
+            zIndex: -1,
             left: 0,
-            top: 60,
+            top: 70,
           },
         ],
 
@@ -344,8 +344,8 @@ export const dummyObject: GroupProps[] = [
           {
             url: "munisekai/char/sticker/an2.png",
             zIndex: 0,
-            left: 60,
-            top: 25,
+            left: 0,
+            top: 30,
           },
           {
             url: "munisekai/char/sticker/an3.png",
@@ -372,13 +372,13 @@ export const dummyObject: GroupProps[] = [
             url: "munisekai/char/sticker/akito1.png",
             zIndex: 0,
             top: 5,
-            left: 5,
+            left: 0,
           },
           {
             url: "munisekai/char/sticker/akito2.png",
             zIndex: 0,
             left: 60,
-            top: 25,
+            top: 30,
           },
           {
             url: "munisekai/char/sticker/akito3.png",
@@ -402,21 +402,21 @@ export const dummyObject: GroupProps[] = [
         bodyImg: "munisekai/char/touya",
         stamps: [
           {
-            url: "munisekai/char/sticker/touya1.png",
+            url: "munisekai/char/sticker/touya3.png",
             zIndex: 0,
             top: 5,
             left: 5,
           },
           {
             url: "munisekai/char/sticker/touya2.png",
-            zIndex: 0,
+            zIndex: -1,
             left: 60,
-            top: 25,
+            top: 40,
           },
           {
-            url: "munisekai/char/sticker/touya3.png",
+            url: "munisekai/char/sticker/touya1.png",
             zIndex: 11,
-            left: 0,
+            left: 5,
             top: 60,
           },
         ],
@@ -480,11 +480,11 @@ export const dummyObject: GroupProps[] = [
             url: "munisekai/char/sticker/emu1.png",
             zIndex: 0,
             top: 5,
-            left: 5,
+            left: 0,
           },
           {
             url: "munisekai/char/sticker/emu2.png",
-            zIndex: 0,
+            zIndex: -1,
             left: 60,
             top: 25,
           },
@@ -517,8 +517,8 @@ export const dummyObject: GroupProps[] = [
           },
           {
             url: "munisekai/char/sticker/nene2.png",
-            zIndex: 0,
-            left: 60,
+            zIndex: -1,
+            left: 65,
             top: 25,
           },
           {
@@ -550,8 +550,8 @@ export const dummyObject: GroupProps[] = [
           },
           {
             url: "munisekai/char/sticker/rui2.png",
-            zIndex: 0,
-            left: 60,
+            zIndex: -1,
+            left: 70,
             top: 25,
           },
           {
@@ -592,7 +592,7 @@ export const dummyObject: GroupProps[] = [
           },
           {
             url: "munisekai/char/sticker/kanade2.png",
-            zIndex: 0,
+            zIndex: -1,
             left: 60,
             top: 25,
           },
@@ -624,7 +624,7 @@ export const dummyObject: GroupProps[] = [
           },
           {
             url: "munisekai/char/sticker/mafuyu2.png",
-            zIndex: 0,
+            zIndex: -1,
             left: 60,
             top: 25,
           },
@@ -653,21 +653,21 @@ export const dummyObject: GroupProps[] = [
         bodyImg: "munisekai/char/ena",
         stamps: [
           {
-            url: "munisekai/char/sticker/ena1.png",
+            url: "munisekai/char/sticker/ena3.png",
             zIndex: 0,
             top: 5,
             left: 5,
           },
           {
             url: "munisekai/char/sticker/ena2.png",
-            zIndex: 0,
-            left: 60,
+            zIndex: -1,
+            left: 65,
             top: 25,
           },
           {
-            url: "munisekai/char/sticker/ena3.png",
+            url: "munisekai/char/sticker/ena1.png",
             zIndex: 11,
-            left: 0,
+            left: 5,
             top: 60,
           },
         ],

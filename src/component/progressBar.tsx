@@ -20,7 +20,7 @@ const ProgressBar = ({colorFrom,colorTo,refTarget,title}:ProgressBarProps) => {
     });
     return (
       <motion.div
-        className="absolute top-0 left-0 w-fit uppercase h-full text-right text-xs px-3"
+        className="absolute top-0 left-0 w-fit uppercase h-full text-right text-xs px-3 z-[999]"
         style={{
           originY: 0,
           scaleY,

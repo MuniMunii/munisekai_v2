@@ -21,7 +21,7 @@ export default function OpeningComp({videoEnded,setVideoEnded}:OpeningProps){
             autoPlay
             muted
             loop={false}
-            onEnded={() => setVideoEnded(true)}
+            onEnded={() => {setVideoEnded(true);localStorage.setItem('videoEnded', 'true');}}
           />
         ) : (
         <motion.div
@@ -36,7 +36,7 @@ export default function OpeningComp({videoEnded,setVideoEnded}:OpeningProps){
             })}`,
         }}
         >
-            <ImageOptimization url="munisekai/bg/logo" quality={90} height={400} width={600}/>
+            <ImageOptimization url="munisekai/bg/logo" quality={90} height={400} width={600} fetchPriority className="w-[90%] max-h-[400px] max-w-[600px]"/>
                 <p className="animate-bounce text-amber-500 text-2xl font-semibold uppercase">V</p>
         </motion.div>
         )}

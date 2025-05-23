@@ -63,13 +63,13 @@ export default function ImageCarousel({
         },
       }}
       exit={{ opacity: 0, x: -50 }}
-      className="h-96 w-[90%] max-w-72 flex justify-center items-center relative select-none"
+      className="h-96 w-[90%] max-w-72 z-10 flex justify-center items-center relative select-none"
     >
       <ImageOptimization
         loading={true}
         quality={100}
         url={bodyImage}
-        className="object-cover z-10 pointer-events-none"
+        className="object-cover pointer-events-none z-20 "
       />
       <StampAppear stamps={stamps} name={name} />
     </motion.div>
