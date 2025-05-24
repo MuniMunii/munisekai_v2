@@ -80,7 +80,7 @@ export const Slide = forwardRef<HTMLDivElement, TestingCharacter>(
             exit={{ opacity: 0, x: -100 }}
             className="bg-white/80 rounded-md p-2 w-full md:max-w-[300px]"
           >
-            Birthday: {birthday}
+            Birthday<span className="ml-3.5 pl-1.5 border-l-2 border-l-gray-700">{birthday}</span>
           </motion.p>
               <motion.div
                 animate={{ opacity: 1, x: 0, transition: { delay: 0.4 } }}
@@ -88,7 +88,7 @@ export const Slide = forwardRef<HTMLDivElement, TestingCharacter>(
                 exit={{ opacity: 0, x: -100 }}
                 className="bg-white/80 h-fit w-full md:max-w-[300px] flex items-center gap-1.5 p-1.5 rounded-md"
               >
-                <p className="border-r-2 border-r-gray-700 pr-1.5 w-[78px]">
+                <p className="border-r-2 border-r-gray-700 pr-3.5 w-[78px]">
                   Hobbies
                 </p>
                 <div className="">{hobbies.join(", ")}</div>
@@ -99,7 +99,7 @@ export const Slide = forwardRef<HTMLDivElement, TestingCharacter>(
                 exit={{ opacity: 0, x: -100 }}
                 className="bg-white/80 h-fit w-full md:max-w-[300px] flex items-center gap-1.5 p-1.5 rounded-md"
               >
-                <p className="border-r-2 border-r-gray-700 pr-1.5 w-[78px]">
+                <p className="border-r-2 border-r-gray-700 pr-3.5 w-[78px]">
                   Specialty
                 </p>
                 <div className="">{specialty.join(",")}</div>

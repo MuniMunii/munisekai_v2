@@ -33,11 +33,22 @@ html{
   overflow: hidden;
   min-height: 100vh;
 }
+* {
+  box-sizing: border-box;
+}
 #root {
+  scrollbar-gutter: stable right;
     overflow: hidden;
-  min-width: 100vw;
-  max-width: 1280px;
+    /* min-width: 1280px; */
+  width: 100%;
   margin: 0 auto;
   min-height: 100vh;
 }
-html{overflow-x: hidden; scroll-behavior: smooth;}
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+html{overflow-x: auto; scroll-behavior: smooth;}

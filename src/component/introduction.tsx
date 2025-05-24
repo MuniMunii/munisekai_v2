@@ -3,7 +3,6 @@ import { motion } from "framer-motion"
 import {
   ImageOptimization,
 } from "./ImageOptimization";
-import ProgressBar from "./progressBar";
 export default function Introduction(){
     const introductionRef = useRef(null);
     function FadeTextElement({
@@ -35,8 +34,8 @@ export default function Introduction(){
           ref={introductionRef}
           className="w-full overflow-hidden bg-cover text-slate-700 relative pt-10"
         >
-          <ProgressBar title="Introduction" refTarget={introductionRef} colorFrom="#33ccbb" colorTo="#33aaee"/>
-          <div className="w-full h-4 absolute -top-2 left-0 bg-cyan-primary"></div>
+          {/* <ProgressBar title="Introduction" refTarget={introductionRef} colorFrom="#33ccbb" colorTo="#33aaee"/> */}
+          {/* <div className="w-full h-4 absolute -top-2 left-0 bg-cyan-primary"></div> */}
           {/* first row */}
           <div className="flex flex-row justify-start mb-28 max-md:flex-col gap-x-18">
             <motion.div

@@ -1,23 +1,21 @@
 import { useRef, useState, useEffect, lazy, Suspense } from "react";
 import "./App.css";
 import OpeningComp from "./component/opening_new";
-// import Introduction from "./component/introduction";
 import { BackgroundImageUrl } from "./component/ImageOptimization";
-import ProgressBar from "./component/progressBar";
-// import  CarouselCharacter  from "./component/carousel/carousel";
-// import Lenis from "@studio-freight/lenis";
-// import {ReactLenis,useLenis} from 'lenis/react'
 import { ReactLenis } from "lenis/react";
 import type { LenisRef } from "lenis/react";
 import { cancelFrame, frame } from "motion";
+import ListContent from "./component/list_content";
 function App() {
   const lenisRef = useRef<LenisRef>(null);
-  const [videoEnded, setVideoEnded] = useState<boolean>(localStorage.getItem("videoEnded") === "true");
+  const [videoEnded, setVideoEnded] = useState<boolean>(
+    localStorage.getItem("videoEnded") === "true"
+  );
   const NavbarLazy = lazy(() => import("./component/navbar_new"));
   const CarouselCharacter = lazy(() => import("./component/carousel/carousel"));
-  // const OpeningComp=lazy(()=> import('./component/opening_new'))
   const Introduction = lazy(() => import("./component/introduction"));
   const divElement = useRef<HTMLDivElement>(null);
+  const SideLabel= lazy(() => import("./component/side_label"));
   useEffect(() => {
     function update(data: { timestamp: number }) {
       const time = data.timestamp;
@@ -42,12 +40,14 @@ function App() {
         ref={lenisRef}
       >
         <Suspense>
+          {videoEnded&& <SideLabel/>}
           <NavbarLazy />
         </Suspense>
         <OpeningComp videoEnded={videoEnded} setVideoEnded={setVideoEnded} />
         {videoEnded && (
           <>
             <div
+            className="relative"
               style={{
                 backgroundImage: BackgroundImageUrl({
                   type: "img",
@@ -55,12 +55,15 @@ function App() {
                 }),
               }}
             >
+                  <div className="w-full h-4 absolute -top-2 left-0 bg-cyan-primary"/>
+              <ListContent/>
               <Suspense>
                 <Introduction />
               </Suspense>
+              {/* carousel */}
               <div
                 ref={divElement}
-                className={`w-full h-full min-h-screen relative p-6 bg-cover `}
+                className={`w-full h-full min-h-screen relative p-6 bg-[100% 100%] `}
                 style={{
                   backgroundImage: BackgroundImageUrl({
                     type: "img",
@@ -70,12 +73,6 @@ function App() {
               >
                 <div className="absolute size-full left-0 top-0 bg-white/10 backdrop-blur-xs z-[0]" />
                 <div className="z-30">
-                  <ProgressBar
-                    title="Unit"
-                    refTarget={divElement}
-                    colorFrom="#33aaee"
-                    colorTo="#05df72"
-                  />
                   <Suspense>
                     <CarouselCharacter />
                   </Suspense>

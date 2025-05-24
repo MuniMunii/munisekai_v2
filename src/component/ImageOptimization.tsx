@@ -15,7 +15,7 @@ export function ImageOptimization({url,quality='auto',height,width,rotateAngle,c
     }
     useEffect(()=>{const img=new Image();img.onload=()=>setIsImageLoading(false);img.src=myImage.toURL()},[url])
     return (
-    <div className="relative inline-block">
+<>
       {/* Not suppor alt so ichange to original img tag */}
       {/* <AdvancedImage
         cldImg={myImage}
@@ -36,7 +36,7 @@ export function ImageOptimization({url,quality='auto',height,width,rotateAngle,c
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 }
 export function BackgroundImageUrl({url,quality='auto',type}:{type:'video'|'img',url:string,quality?:QualityProps} ) {

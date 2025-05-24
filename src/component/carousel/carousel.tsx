@@ -44,12 +44,12 @@ export default function CarouselCharacter() {
               : { duration: 0 }
           }
           onClick={() => setSelectedItem(index + 1)}
-          className="rounded-full border size-18 p-[6px] flex  justify-center items-center select-none"
+          className="rounded-full border md:size-18 max-md:size-16 p-[6px] flex cursor-pointer justify-center items-center select-none"
           style={{
             border: `solid 1px ${isActive ? currentGroup.color : "#000"}`,
           }}
         >
-          <ImageOptimization url={char.icon} loading={true} />
+          <ImageOptimization url={char.icon} loading={true} className=""/>
         </motion.div>
       );
     });
@@ -58,17 +58,20 @@ export default function CarouselCharacter() {
     <div style={{zIndex:10}} className="w-full max-w-[1333px] mx-auto my-auto h-full gap-4 flex flex-col">
       <div className="flex gap-2 justify-center">
         {dummyObject.map((group) => (
-          <button
+          <motion.button
+  initial={{ backgroundImage:`linear-gradient(220deg, ${group.color}, rgba(255, 255, 255, 0.55))` }}
+          whileHover={{ backgroundImage:`linear-gradient(100deg, ${group.color}, rgba(255, 255, 255, 0.55))`}}
+          whileTap={{ backgroundImage:`linear-gradient(100deg, ${group.color}, rgba(255, 255, 255, 0.55))`}}
             key={"button" + group.group}
             onClick={() => {
               setGroup(group.group);
               setSelectedItem(1);
             }}
-            style={{ backgroundColor: group.color }}
-            className=" bg-green-400 w-32 h-fit py-1 px-2 rounded-md z-50"
+            // style={{ backgroundColor: group.color }}
+            className="w-32 h-fit py-1 flex justify-center items-center px-2 rounded-md z-10 cursor-pointer"
           >
             <ImageOptimization url={group.iconGroup}/>
-          </button>
+          </motion.button>
         ))}
       </div>
       <p style={{color:currentGroup.color}} className={`text-center text-2xl max-md:text-xl z-10 max-w-[700px] bg-white/90 h-fit w-[95%] mx-auto py-2 px-3 rounded-md relative before:absolute before:text-7xl before:content-['“'] before:font-mono before:-top-5 before:-left-4 after:absolute after:text-7xl after:content-['”'] after:font-mono after:-bottom-13 after:-right-4`}>
