@@ -37,7 +37,7 @@ export default function OpeningComp({videoEnded,setVideoEnded}:OpeningProps){
         }}
         >
             <ImageOptimization url="munisekai/bg/logo" quality={90} height={400} width={600} fetchPriority className="w-[90%] max-h-[400px] max-w-[600px]"/>
-                <p className="animate-bounce text-amber-500 text-2xl font-semibold uppercase">V</p>
+                <p className="animate-bounce text-grey-400 text-2xl font-semibold uppercase">V</p>
         </motion.div>
         )}
         </AnimatePresence>

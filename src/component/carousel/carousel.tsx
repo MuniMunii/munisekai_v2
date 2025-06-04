@@ -55,7 +55,7 @@ export default function CarouselCharacter() {
     });
   }
   return (
-    <div style={{zIndex:10}} className="w-full max-w-[1333px] mx-auto my-auto h-full gap-4 flex flex-col">
+    <div id="unit" style={{zIndex:10}} className="w-full max-w-[1333px] mx-auto my-auto h-full gap-4 flex flex-col">
       <div className="flex gap-2 justify-center">
         {dummyObject.map((group) => (
           <motion.button

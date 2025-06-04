@@ -80,7 +80,7 @@ function Navbar() {
                   <p>Welcome!</p>
                 </div>
                 <div className="flex gap-2">
-                  <div className="w-full relative overflow-hidden h-28 bg-gradient-to-tr rounded-md from-cyan-500/75 to-cyan-300/40 uppercase flex flex-col-reverse justify-center items-center font-semibold text-base transition hover:shadow-[inset_2px_2px_86px_4px_#81e6d9,0px_0px_10px_2px_#81e6d9]">
+                  <a onClick={()=>setOpenNav(false)} href="#introduction" className="w-full relative overflow-hidden h-28 bg-gradient-to-tr rounded-md from-cyan-500/75 to-cyan-300/40 uppercase flex flex-col-reverse justify-center items-center font-semibold text-base transition hover:shadow-[inset_2px_2px_86px_4px_#81e6d9,0px_0px_10px_2px_#81e6d9]">
                     Introduction
                     <img
                     loading="lazy"
@@ -88,8 +88,8 @@ function Navbar() {
                       src="https://img.icons8.com/?size=50&id=WB3oQAyWBbjX&format=png&color=000000"
                     ></img>{" "}
                     <div className="absolute -top-5 -left-5 rotate-45 size-10 bg-cyan-500"></div>
-                  </div>
-                  <div className="w-full relative overflow-hidden h-28 bg-gradient-to-tr rounded-md from-pink-400/75 to-pink-300/40 uppercase flex flex-col-reverse justify-center items-center font-semibold text-base transition hover:shadow-[inset_2px_2px_86px_4px_#81e6d9,0px_0px_10px_2px_#81e6d9]">
+                  </a>
+                  <a onClick={()=>setOpenNav(false)} href="#unit" className="w-full relative overflow-hidden h-28 bg-gradient-to-tr rounded-md from-pink-400/75 to-pink-300/40 uppercase flex flex-col-reverse justify-center items-center font-semibold text-base transition hover:shadow-[inset_2px_2px_86px_4px_#81e6d9,0px_0px_10px_2px_#81e6d9]">
                     Unit{" "}
                     <img
                     loading="lazy"
@@ -97,7 +97,7 @@ function Navbar() {
                       src="https://img.icons8.com/?size=50&id=B2d60kgY5kou&format=png&color=000000"
                     ></img>{" "}
                     <div className="absolute -top-5 -left-5 rotate-45 size-10 bg-pink-400"></div>
-                  </div>
+                  </a>
                 </div>
               </div>
             </motion.div>

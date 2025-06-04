@@ -1,6 +1,7 @@
 export const dummyObject: GroupProps[] = [
   {
     group: "leo",
+    groupName: "Leo/need",
     groupDesc:
       "A band formed by a group of childhood friends who have learned to overcome their differences.",
     iconGroup: "munisekai/logo/leo_big",
@@ -16,6 +17,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Peeling apples"],
         icon: "munisekai/logo/icon/ichika",
         bodyImg: "munisekai/char/ichika",
+        halfImg:"munisekai/char/new/ichika_half",
         stamps: [
           {
             url: "munisekai/char/sticker/ichika1.png",
@@ -49,6 +51,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Hairstyling", "Juggling"],
         icon: "munisekai/logo/icon/saki",
         bodyImg: "munisekai/char/saki",
+                halfImg:"munisekai/char/new/saki_half",
         stamps: [
           {
             url: "munisekai/char/sticker/saki1.png",
@@ -82,6 +85,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Housekeeping", "Swimming"],
         icon: "munisekai/logo/icon/honami",
         bodyImg: "munisekai/char/honami",
+                        halfImg:"munisekai/char/new/honami_half",
         stamps: [
           {
             url: "munisekai/char/sticker/honami1.png",
@@ -115,6 +119,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Calligraphy"],
         icon: "munisekai/logo/icon/shiho",
         bodyImg: "munisekai/char/shiho",
+                        halfImg:"munisekai/char/new/shiho_half",
         stamps: [
           {
             url: "munisekai/char/sticker/shiho1.png",
@@ -141,6 +146,7 @@ export const dummyObject: GroupProps[] = [
   },
   {
     group: "mmj",
+    groupName: "MORE MORE JUMP!",
     groupDesc:
       "A unique idol group formed by one girl with a dream, and three other girls who had given up on theirs.",
     iconGroup: "munisekai/logo/mmj_big",
@@ -160,6 +166,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Coming up with catchphrases"],
         icon: "munisekai/logo/icon/minori",
         bodyImg: "munisekai/char/minori",
+                        halfImg:"munisekai/char/new/minori_half",
         stamps: [
           {
             url: "munisekai/char/sticker/minori3.png",
@@ -193,6 +200,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Basketball"],
         icon: "munisekai/logo/icon/haruka",
         bodyImg: "munisekai/char/haruka",
+                        halfImg:"munisekai/char/new/haruka_half",
         stamps: [
           {
             url: "munisekai/char/sticker/haruka2.png",
@@ -226,6 +234,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Cooking", "Looking after kids"],
         icon: "munisekai/logo/icon/airi",
         bodyImg: "munisekai/char/airi",
+                        halfImg:"munisekai/char/new/airi_half",
         stamps: [
           {
             url: "munisekai/char/sticker/airi1.png",
@@ -259,6 +268,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Archery", "Embroidery"],
         icon: "munisekai/logo/icon/shizuku",
         bodyImg: "munisekai/char/shizuku",
+                        halfImg:"munisekai/char/new/shizuku_half",
         stamps: [
           {
             url: "munisekai/char/sticker/shizuku3.png",
@@ -286,6 +296,7 @@ export const dummyObject: GroupProps[] = [
   },
   {
     group: "vbs",
+    groupName: "Vivid BAD SQUAD",
     groupDesc:
       "A talented group of street artists who teamed up to surpass a legend.",
     iconGroup: "munisekai/logo/vbs_big",
@@ -301,6 +312,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Photography"],
         icon: "munisekai/logo/icon/kohane",
         bodyImg: "munisekai/char/kohane",
+                        halfImg:"munisekai/char/new/kohane_half",
         stamps: [
           {
             url: "munisekai/char/sticker/kohane1.png",
@@ -333,6 +345,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Making coffee and tea"],
         icon: "munisekai/logo/icon/an",
         bodyImg: "munisekai/char/an",
+                        halfImg:"munisekai/char/new/an_half",
         stamps: [
           {
             url: "munisekai/char/sticker/an1.png",
@@ -366,6 +379,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Beatboxing"],
         icon: "munisekai/logo/icon/akito",
         bodyImg: "munisekai/char/akito",
+                        halfImg:"munisekai/char/new/akito_half",
         stamps: [
           {
             url: "munisekai/char/sticker/akito2.png",
@@ -399,6 +413,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Piano", "Violin"],
         icon: "munisekai/logo/icon/touya",
         bodyImg: "munisekai/char/touya",
+                        halfImg:"munisekai/char/new/touya_half",
         stamps: [
           {
             url: "munisekai/char/sticker/touya3.png",
@@ -426,6 +441,7 @@ export const dummyObject: GroupProps[] = [
   },
   {
     group: "wxs",
+    groupName: "Wonderlands x Showtime",
     groupDesc:
       "An eccentric musical show unit, proclaiming each day wonderful and rushing out to meet it head on.",
     iconGroup: "munisekai/logo/wxs_big",
@@ -441,6 +457,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Striking cool poses", "Piano"],
         icon: "munisekai/logo/icon/tsukasa",
         bodyImg: "munisekai/char/tsukasa",
+        halfImg: "",
         stamps: [
           {
             url: "munisekai/char/sticker/tsukasa1.png",
@@ -474,6 +491,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Acrobatics", "Foodie"],
         icon: "munisekai/logo/icon/emu",
         bodyImg: "munisekai/char/emu",
+                        halfImg:"munisekai/char/new/emu_half",
         stamps: [
           {
             url: "munisekai/char/sticker/emu1.png",
@@ -507,6 +525,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Singing", "Technology"],
         icon: "munisekai/logo/icon/nene",
         bodyImg: "munisekai/char/nene",
+                        halfImg:"munisekai/char/new/nene_half",
         stamps: [
           {
             url: "munisekai/char/sticker/nene1.png",
@@ -540,6 +559,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Inventing"],
         icon: "munisekai/logo/icon/rui",
         bodyImg: "munisekai/char/rui",
+                        halfImg:"munisekai/char/new/rui_half",
         stamps: [
           {
             url: "munisekai/char/sticker/rui1.png",
@@ -567,8 +587,8 @@ export const dummyObject: GroupProps[] = [
   },
   {
     group: "25j",
-    groupDesc:
-      "A mysterious music circle that operates at 1:00 AM (25:00), and whose identities are shrouded in mystery.",
+    groupName: "Nightcord at 25:00",
+    groupDesc:"A mysterious music circle that operates at 1:00 AM (25:00), and whose identities are shrouded in mystery.",
     iconGroup: "munisekai/logo/n25_big",
     color: "#7f22fe",
     char: [
@@ -582,6 +602,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["An innate ability to accurately track time"],
         icon: "munisekai/logo/icon/kanade",
         bodyImg: "munisekai/char/kanade",
+                        halfImg:"munisekai/char/new/kanade_half",
         stamps: [
           {
             url: "munisekai/char/sticker/kanade3.png",
@@ -614,6 +635,7 @@ export const dummyObject: GroupProps[] = [
         specialty: ["Speaking English"],
         icon: "munisekai/logo/icon/mafuyu",
         bodyImg: "munisekai/char/mafuyu",
+                        halfImg:"munisekai/char/new/mafuyu_half",
         stamps: [
           {
             url: "munisekai/char/sticker/mafuyu1.png",
@@ -650,6 +672,7 @@ export const dummyObject: GroupProps[] = [
         ],
         icon: "munisekai/logo/icon/ena",
         bodyImg: "munisekai/char/ena",
+                        halfImg:"munisekai/char/new/ena_half",
         stamps: [
           {
             url: "munisekai/char/sticker/ena3.png",
@@ -677,12 +700,12 @@ export const dummyObject: GroupProps[] = [
         name: "Akiyama Mizuki",
         imageColor: "#DDAACC",
         birthday: "August 27",
-        longDesc:
-          "Nightcord at 25:00's video editor. Mizuki wanted to do something about the worsening relationship between Mafuyu and her mother, but felt unable to offer anything knowing that they are running away from their problems. However, Mizuki realized that there are things that can be gained by running away, and told Mafuyu that doing so is always an option.",
+        longDesc:"Nightcord at 25:00's video editor. Mizuki wanted to do something about the worsening relationship between Mafuyu and her mother, but felt unable to offer anything knowing that they are running away from their problems. However, Mizuki realized that there are things that can be gained by running away, and told Mafuyu that doing so is always an option.",
         hobbies: ["Making Videos", "Collages"],
         specialty: ["Redesigning clothes"],
         icon: "munisekai/logo/icon/mizuki",
         bodyImg: "munisekai/char/mizuki",
+                        halfImg:"munisekai/char/new/mizuki_half",
         stamps: [
           {
             url: "munisekai/char/sticker/mizuki1.png",

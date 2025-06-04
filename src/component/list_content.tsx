@@ -6,7 +6,7 @@ export default function ListContent() {
         <div className=" flex max-md:flex-col items-center justify-center gap-4">
       <div className="flex flex-col w-full gap-4 items-center justify-center">
         <a
-          href="#"
+          href="#introduction"
           style={{
             backgroundImage: BackgroundImageUrl({
               type: "img",
@@ -30,7 +30,7 @@ export default function ListContent() {
           </div>
         </a>
         <a
-          href="#"
+          href="#unit"
           style={{
             backgroundImage: BackgroundImageUrl({
               type: "img",
@@ -56,7 +56,7 @@ export default function ListContent() {
       </div>
       <div className="flex flex-col w-full gap-4 items-center justify-center">
         <a
-          href="#"
+          href="#news"
           style={{
             backgroundImage: BackgroundImageUrl({
               type: "img",
@@ -80,7 +80,7 @@ export default function ListContent() {
           </div>
         </a>
         <a
-          href="#"
+          href="https://pjsekai.sega.jp/"
           style={{
             backgroundImage: BackgroundImageUrl({
               type: "img",

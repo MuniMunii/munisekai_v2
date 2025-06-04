@@ -30,9 +30,11 @@ imageColor:string;
   desc: string;
   longDesc: string;
   bodyImg: string;
+  halfImg?:string;
   stamps?:StampProps[]
 }
 interface GroupProps {
+  groupName: string;
   iconGroup: string;
   group: GroupShortNames;
   groupDesc: string;
