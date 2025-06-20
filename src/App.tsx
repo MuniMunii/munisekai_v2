@@ -125,9 +125,9 @@ useEffect(() => {console.log(randomChar)},[randomChar])
                     </div>
                   </div>
                 </div>
-                <div style={{backgroundImage:BackgroundImageUrl({type:'img',url:'munisekai/bg/kami_classroom_empty'})}} className="max-w-[500px] w-[90%] flex max-md:flex-col h-[400px] p-10 justify-end items-center relative my-auto bg-cover rounded-tl-3xl rounded-bl-3xl max-lg:self-end">
-                  <ImageOptimization url={`${randomChar?.halfImg}`} width={300} height={380} className="size-[80%] max-w-[300px] max-h-[380px] absolute bottom-0 left-0 z-20"/>
-                  <div className="flex z-10">
+                <div style={{backgroundImage:BackgroundImageUrl({type:'img',url:'munisekai/bg/kami_classroom_empty'})}} className="lg:w-[40vw] max-lg:max-w-[500px] w-[90%] flex max-md:flex-col h-[400px] p-10 justify-end items-center relative my-auto bg-cover rounded-tl-3xl rounded-bl-3xl max-lg:self-end">
+                  <ImageOptimization url={`${randomChar?.halfImg}`} width={300} height={380} className="size-[80%] max-w-[300px] max-h-[380px] absolute bottom-0 left-0 z-[5]"/>
+                  <div className="flex">
                                       <div className="w-fit px-6 py-3 sm:text-4xl h-fit text-nowrap rounded-bl-4xl max-md:absolute max-md:top-3 max-sm:text-[8vw] max-md:left-3 md:[writing-mode:vertical-lr]" style={{backgroundColor:randomChar?.imageColor}}>{randomChar?.name}</div>
                                       <div className="text-xs px-4 rounded-br-md rounded-tr-md max-md:absolute max-md:top-3 max-md:left-3 md:[writing-mode:vertical-lr]" style={{backgroundColor:randomGroup?.color}}>{randomGroup?.groupName}</div>
                   </div>
